@@ -76,8 +76,8 @@
   <title>DKEC: Domain Knowledge Enhanced Multi-Label Classification for Diagnosis Prediction — Ge, Satpathy, Williams, Stankovic, Alemzadeh | UVA | EMNLP 2024</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="">
+  <link rel="apple-touch-icon" href="">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -288,30 +288,30 @@
 
 
 <!-- Image carousel -->
-<section id="Approach", class="hero is-small">
+<!-- Approach -->
+<section id="approach" class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/KG.png" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          Knowledge Graph Construction: 1) retrieve. 2) step-by-step thinking: token classification, Span detection, Relation Extraction. 3) UMLS normalization
-        </h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Approach</h2>
+
+      <div id="approach-carousel" class="carousel results-carousel" style="margin-top:1rem;">
+        <div class="item">
+          <img src="static/images/KG.png" alt="Knowledge Graph construction" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            Knowledge Graph Construction: (1) retrieve → (2) step-by-step extraction (token classification, span detection, relation extraction) → (3) UMLS normalization.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/Pipeline.png" alt="DKEC pipeline" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            DKEC pipeline: text branch → graph branch → heterogeneous label-wise attention → label-attentive document embeddings.
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Pipeline.png" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          DKEC Pipeline includes three main modules: a text branch to derive text embeddings, a graph branch to derive updated diagnosis embeddings, and a HLA module to derive label-attentive document embeddings.
-        </h2>
-      </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+
 
 
 
