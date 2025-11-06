@@ -302,7 +302,7 @@
       />
       <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
         <b>Figure 1.</b>
-        Pretrained models rely on broad, uncurated knowledge from pre-training, often missing task-specific information and label relationships; they're also expensive to fine-tune and deploy on resource-constrained devices. Prior work that models hierarchical label relations helps downstream tasks, but typically overlooks heterogeneous knowledge embedded in medical guidelines. Incorporating external domain knowledge can (i) enrich learning under <em>few-shot supervision, mitigating data scarcity</em> and limited model capacity, and (ii) act as <em>training constraints via label relations</em> to improve consistency and generalization.
+        Pretrained models rely on broad, uncurated knowledge from pre-training, often missing task-specific information and label relationships; they're also expensive to fine-tune and deploy on resource-constrained devices. Prior work that models hierarchical label relations helps downstream tasks, but typically overlooks heterogeneous knowledge embedded in medical guidelines. Incorporating external domain knowledge can (i) enrich learning under <strong>few-shot supervision, mitigating data scarcity</strong> and limited model capacity, and (ii) act as <strong>training constraints via label relations</strong> to improve consistency and generalization.
       </figcaption>
     </figure>
   </div>
@@ -321,7 +321,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Multi-label text classification (MLTC) tasks in the medical domain often face the <em>long-tail label distribution problem</em>. Prior works have explored hierarchical label structures to find relevant information for few-shot classes, but mostly neglected to incorporate external knowledge from medical guidelines. This paper presents DKEC, Domain Knowledge Enhanced Classification for diagnosis prediction with two innovations: (1) <em>automated construction of heterogeneous knowledge graphs</em> from external sources to capture semantic relations among diverse medical entities, (2) <em>incorporating the heterogeneous knowledge graphs</em> in few-shot classification using a label-wise attention mechanism. We construct DKEC using three online medical knowledge sources and evaluate it on a real-world Emergency Medical Services (EMS) dataset and a public electronic health record (EHR) dataset. Results show that DKEC outperforms the state-of-the-art label-wise attention networks and transformer models of different sizes, <em>particularly for the few-shot classes</em>. More importantly, <em>it helps the smaller language models achieve comparable performance to large language models</em>.
+            Multi-label text classification (MLTC) tasks in the medical domain often face the <strong>long-tail label distribution problem</strong>. Prior works have explored hierarchical label structures to find relevant information for few-shot classes, but mostly neglected to incorporate external knowledge from medical guidelines. This paper presents DKEC, Domain Knowledge Enhanced Classification for diagnosis prediction with two innovations: (1) <strong>automated construction of heterogeneous knowledge graphs</strong> from external sources to capture semantic relations among diverse medical entities, (2) <strong>incorporating the heterogeneous knowledge graphs</strong> in few-shot classification using a label-wise attention mechanism. We construct DKEC using three online medical knowledge sources and evaluate it on a real-world Emergency Medical Services (EMS) dataset and a public electronic health record (EHR) dataset. Results show that DKEC outperforms the state-of-the-art label-wise attention networks and transformer models of different sizes, <strong>particularly for the few-shot classes</strong>. More importantly, <strong>it helps the smaller language models achieve comparable performance to large language models</strong>.
           </p>
         </div>
       </div>
@@ -342,13 +342,13 @@
         <div class="item">
           <img src="static/images/KG.png" alt="Knowledge Graph construction" loading="lazy"/>
           <h2 class="subtitle has-text-centered">
-            We develop a method for automated construction of heterogeneous knowledge graphs from online sources (e.g., Wikipedia, MayoClinic, ODEMSA) that accurately captures semantic relations among diverse medical entities (e.g., symptoms and diseases, diseases and treatments), by medical entity extraction using chain-of-thought prompting with GPT-4 and UMLS medical concept normalization. Knowledge Graph Construction: (1) retrieve → (2) step-by-step extraction (<em>token classification</em>, <em>span detection</em>, <em>relation extraction</em>) → (3) UMLS normalization.
+            We develop a method for automated construction of heterogeneous knowledge graphs from online sources (e.g., Wikipedia, MayoClinic, ODEMSA) that accurately captures semantic relations among diverse medical entities (e.g., symptoms and diseases, diseases and treatments), by medical entity extraction using chain-of-thought prompting with GPT-4 and UMLS medical concept normalization. Knowledge Graph Construction: (1) retrieve → (2) step-by-step extraction (<strong>token classification</strong>, <strong>span detection</strong>, <strong>relation extraction</strong>) → (3) UMLS normalization.
           </h2>
         </div>
         <div class="item">
           <img src="static/images/Pipeline.png" alt="DKEC pipeline" loading="lazy"/>
           <h2 class="subtitle has-text-centered">
-            We design a <em></em>heterogeneous label-wise attention mechanism</em> based on graph transformers that captures the diagnosis co-occurrence relations based on relevant medical entities in the knowledge graph and is combined with different encoders (e.g., Multi-filter CNN, BERT) to improve multi-label classification. DKEC pipeline: text branch → graph branch → heterogeneous label-wise attention → label-attentive document embeddings.
+            We design a <strong>heterogeneous label-wise attention mechanism</strong> based on graph transformers that captures the diagnosis co-occurrence relations based on relevant medical entities in the knowledge graph and is combined with different encoders (e.g., Multi-filter CNN, BERT) to improve multi-label classification. DKEC pipeline: text branch → graph branch → heterogeneous label-wise attention → label-attentive document embeddings.
           </h2>
         </div>
       </div>
