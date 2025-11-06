@@ -1,6 +1,12 @@
 # DKEC: Domain Knowledge Enhanced Multi-Label Classification for Diagnosis Prediction
 
-code repository for EMNLP 2024 main conference paper [DKEC: Domain Knowledge Enhanced Multi-Label Classification for Diagnosis Prediction](https://arxiv.org/pdf/2310.07059)
+Code repository: **DKEC: Domain Knowledge Enhanced Multi-Label Classification for Diagnosis Prediction** (EMNLP 2024)
+
+<h4 align="center">
+  🌐 <a href="https://xueren-ge.github.io/DKEC/">Project</a> ·
+  📄 <a href="https://aclanthology.org/2024.emnlp-main.712.pdf">Paper</a> ·
+  🎞️ <a href="https://xueren-ge.github.io/DKEC/static/pdfs/DKEC_slide.pdf">Slides</a>
+</h4>
 
 ## Introduction
 Multi-label text classification (MLTC) tasks in the medical domain often face the long-tail label distribution problem. 
