@@ -331,6 +331,7 @@
 <!-- End paper abstract -->
 
 
+<!-- Image carousel -->
 <!-- Approach -->
 <section id="approach" class="hero is-small">
   <div class="hero-body">
@@ -338,31 +339,22 @@
       <h2 class="title is-3 has-text-centered">Approach</h2>
 
       <div id="approach-carousel" class="carousel results-carousel" style="margin-top:1rem;">
-        <!-- KG construction -->
         <div class="item">
-          <img src="static/images/KG.png" alt="Automated EMS knowledge graph construction" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            <strong>Automated EMS Knowledge Graph.</strong>
-            We build a heterogeneous medical KG from trusted sources (e.g., Wikipedia, Mayo Clinic, ODEMSA) that encodes relations among entities such as symptoms, diseases, and treatments.
-            Pipeline: (1) retrieve pages → (2) extract entities (token classification, span detection) and relations (relation extraction) with CoT-guided GPT-4 → (3) normalize and deduplicate via UMLS CUIs.
+          <img src="static/images/KG.png" alt="Knowledge Graph construction" loading="lazy"/>
+          <h2 class="subtitle has-text-left">
+            We develop a method for automated construction of heterogeneous knowledge graphs from online sources (e.g., Wikipedia, MayoClinic, ODEMSA) that accurately captures semantic relations among diverse medical entities (e.g., symptoms and diseases, diseases and treatments), by medical entity extraction using chain-of-thought prompting with GPT-4 and UMLS medical concept normalization. Knowledge Graph Construction: (1) retrieve → (2) step-by-step extraction (<strong>token classification</strong>, <strong>span detection</strong>, <strong>relation extraction</strong>) → (3) UMLS normalization.
           </h2>
         </div>
-
-        <!-- DKEC pipeline -->
         <div class="item">
-          <img src="static/images/Pipeline.png" alt="Diagnosis-aware knowledge-enhanced classification pipeline" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            <strong>Diagnosis-Aware Knowledge Enhancement (DKEC).</strong>
-            A dual-branch architecture combines a text encoder (e.g., CNN/BERT) with a graph branch over the KG. A
-            <em>heterogeneous label-wise attention</em> layer captures diagnosis co-occurrence patterns via relevant medical entities, producing label-attentive document embeddings for multi-label classification.
-            Flow: text branch + graph branch → label-wise attention → diagnosis predictions.
+          <img src="static/images/Pipeline.png" alt="DKEC pipeline" loading="lazy"/>
+          <h2 class="subtitle has-text-left">
+            We design a <strong>heterogeneous label-wise attention mechanism</strong> based on graph transformers that captures the diagnosis co-occurrence relations based on relevant medical entities in the knowledge graph and is combined with different encoders (e.g., Multi-filter CNN, BERT) to improve multi-label classification. DKEC pipeline: text branch → graph branch → heterogeneous label-wise attention → label-attentive document embeddings.
           </h2>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
